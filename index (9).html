@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectas en acción | Matemática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles (1).css">
+</head>
+<body>
+  <a class="skip-link" href="#explorar">Saltar al contenido</a>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Matemática, ir al inicio">∠ <span>MATEMÁTICA</span></a>
+    <nav id="mainNav" aria-label="Navegación principal">
+      <a href="#explorar">Explorar</a>
+      <a href="#conceptos">Conceptos</a>
+      <a href="#laboratorio">Laboratorio</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#cierre">Cierre</a>
+    </nav>
+    <div class="tools">
+      <div class="timer" role="group" aria-label="Cronómetro de la clase">
+        <button id="timerBtn" class="timer-btn" type="button" aria-label="Iniciar o pausar el cronómetro de la clase">⏱ <span id="timerText">60:00</span></button>
+        <button id="timerReset" class="timer-reset" type="button" aria-label="Reiniciar cronómetro">↺</button>
+      </div>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Cambiar tema">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1 · INICIO · 5 min -->
+    <section id="inicio" class="hero slide" data-slide="Inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">GEOMETRÍA · 4.º AÑO <span class="time-chip">CLASE DE 60 MIN</span></p>
+        <h1>Rectas<br><span>en acción.</span></h1>
+        <p class="lead">¿Todas las rectas se cruzan de la misma manera? Vamos a descubrir qué tienen de diferente las paralelas, las secantes y las perpendiculares.</p>
+        <a class="primary-btn" href="#explorar">Empezar a explorar <span aria-hidden="true">→</span></a>
+        <p class="hint">Cambiá de pantalla con el menú o con las flechas ← → del teclado.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Tres pares de rectas: paralelas, secantes y perpendiculares">
+        <div class="art-card art-one"><span class="art-label">PARALELAS</span><svg viewBox="0 0 240 130" aria-hidden="true"><path d="M20 35 L220 35 M20 85 L220 85"/></svg></div>
+        <div class="art-card art-two"><span class="art-label">SECANTES</span><svg viewBox="0 0 240 130" aria-hidden="true"><path d="M25 105 L215 25 M25 25 L215 105"/></svg></div>
+        <div class="art-card art-three"><span class="art-label">PERPENDICULARES</span><svg viewBox="0 0 240 130" aria-hidden="true"><path d="M25 65 L215 65 M120 15 L120 115"/><path class="right-angle" d="M120 65 L145 65 L145 40 L120 40"/></svg></div>
+        <span class="floating-dot dot-a"></span><span class="floating-dot dot-b"></span>
+      </div>
+      <ol class="roadmap" aria-label="Hoja de ruta de la clase">
+        <li><a href="#inicio"><b>5′</b><span>Inicio</span></a></li>
+        <li><a href="#explorar"><b>10′</b><span>Explorar</span></a></li>
+        <li><a href="#conceptos"><b>10′</b><span>Conceptos</span></a></li>
+        <li><a href="#laboratorio"><b>10′</b><span>Laboratorio</span></a></li>
+        <li><a href="#actividades"><b>15′</b><span>Actividades</span></a></li>
+        <li><a href="#cierre"><b>10′</b><span>Cierre</span></a></li>
+      </ol>
+      <div class="slide-number">01 <span>/ 05</span></div>
+    </section>
+
+    <!-- 2 · EXPLORAR · 10 min -->
+    <section id="explorar" class="section slide" data-slide="Explorar">
+      <div class="section-heading">
+        <p class="eyebrow">01 · MIRÁ A TU ALREDEDOR <span class="time-chip">10 MIN</span></p>
+        <h2>Las rectas están<br>por todas partes.</h2>
+        <p>Antes de aprender los nombres, observemos cómo se encuentran dos líneas.</p>
+      </div>
+      <div class="example-grid">
+        <article class="example-card">
+          <div class="photo-shape parallel-shape" role="img" aria-label="Tres líneas que avanzan en la misma dirección sin cruzarse"><i></i><i></i><i></i></div>
+          <div><span class="tag">NO SE ENCUENTRAN</span><h3>Rieles del tren</h3><p>Van en la misma dirección y mantienen siempre la misma distancia.</p></div>
+        </article>
+        <article class="example-card">
+          <div class="photo-shape crossing-shape" role="img" aria-label="Dos líneas que se cruzan formando una X"><i></i><i></i></div>
+          <div><span class="tag">SE CRUZAN</span><h3>Tijera abierta</h3><p>Sus hojas se encuentran en un punto y forman ángulos de distintas medidas.</p></div>
+        </article>
+        <article class="example-card">
+          <div class="photo-shape perpendicular-shape" role="img" aria-label="Dos líneas que se cruzan formando una cruz con ángulos rectos"><i></i><i></i></div>
+          <div><span class="tag">CRUZAN A 90°</span><h3>Esquina de una hoja</h3><p>Se encuentran formando cuatro ángulos rectos, como una “L”.</p></div>
+        </article>
+      </div>
+      <div class="prompt-box">
+        <span class="prompt-label">PARA CONVERSAR · 3 MIN</span>
+        <p>Pensá en pareja: ¿qué tienen en común los tres ejemplos? ¿Qué cambia entre uno y otro? Buscá un ejemplo más en el aula para cada caso.</p>
+      </div>
+      <div class="callout"><span class="callout-icon" aria-hidden="true">✦</span><p><strong>Idea clave:</strong> las rectas pueden no encontrarse o cruzarse. Si se cruzan, importa el ángulo que forman.</p></div>
+      <div class="slide-number">02 <span>/ 05</span></div>
+    </section>
+
+    <!-- 3 · CONCEPTOS · 10 min -->
+    <section id="conceptos" class="section concepts slide" data-slide="Conceptos">
+      <div class="section-heading">
+        <p class="eyebrow">02 · TRES FORMAS DE RELACIONARSE <span class="time-chip">10 MIN</span></p>
+        <h2>¿En qué se diferencian?</h2>
+        <p>Elegí cada tarjeta para destacar sus características.</p>
+      </div>
+      <div class="concept-grid" role="group" aria-label="Tipos de rectas">
+        <button class="concept-card selected" type="button" data-concept="parallel" aria-pressed="true">
+          <div class="mini-figure"><svg viewBox="0 0 260 110" aria-hidden="true"><path d="M20 30 H240 M20 80 H240"/></svg></div>
+          <span class="concept-index">A · 01</span><h3>Paralelas</h3><p>No se cortan nunca.</p><span class="algebra-tag">m₁ = m₂</span><span class="more">Ver características ↗</span>
+        </button>
+        <button class="concept-card" type="button" data-concept="secant" aria-pressed="false">
+          <div class="mini-figure"><svg viewBox="0 0 260 110" aria-hidden="true"><path d="M25 15 L235 95 M25 95 L235 15"/></svg></div>
+          <span class="concept-index">B · 02</span><h3>Secantes</h3><p>Se cortan en un punto.</p><span class="algebra-tag">m₁ ≠ m₂</span><span class="more">Ver características ↗</span>
+        </button>
+        <button class="concept-card" type="button" data-concept="perpendicular" aria-pressed="false">
+          <div class="mini-figure"><svg viewBox="0 0 260 110" aria-hidden="true"><path d="M20 55 H240 M130 8 V102"/><path class="right-angle" d="M130 55 H153 V32 H130"/></svg></div>
+          <span class="concept-index">C · 03</span><h3>Perpendiculares</h3><p>Son secantes que forman 90°.</p><span class="algebra-tag">m₁ · m₂ = −1</span><span class="more">Ver características ↗</span>
+        </button>
+      </div>
+      <div class="detail-panel" aria-live="polite">
+        <div class="detail-symbol" id="detailSymbol" aria-hidden="true">∥</div>
+        <div>
+          <p class="eyebrow" id="detailEyebrow">DOS RECTAS QUE NO SE CRUZAN</p>
+          <h3 id="detailTitle">Rectas paralelas</h3>
+          <p id="detailText">Aunque las prolonguemos en ambos sentidos, nunca se encuentran. La distancia entre ellas se mantiene constante.</p>
+          <p class="example-line"><strong>Ejemplo:</strong> los renglones de un cuaderno.</p>
+          <p class="notation-line"><strong>Cómo se escribe:</strong> <span id="detailNotation">a ∥ b (se lee: «a es paralela a b»)</span></p>
+          <p class="analytic-line"><strong>En el plano (y = mx + b):</strong> <span id="detailAnalytic">Tienen la misma pendiente (m₁ = m₂) y distinta ordenada al origen (b₁ ≠ b₂). Ej.: y = 2x + 1 e y = 2x − 3.</span></p>
+        </div>
+      </div>
+      <div class="callout"><span class="callout-icon" aria-hidden="true">∠</span><p><strong>Recordá y = mx + b:</strong> la <b>pendiente m</b> dice cuánto sube o baja y cuando x aumenta 1; la <b>ordenada al origen b</b> es el punto (0; b) donde la recta corta al eje y.</p></div>
+      <div class="slide-number">03 <span>/ 05</span></div>
+    </section>
+
+    <!-- 4 · LABORATORIO · 10 min -->
+    <section id="laboratorio" class="section lab slide" data-slide="Laboratorio">
+      <div class="section-heading">
+        <p class="eyebrow">03 · EXPERIMENTÁ <span class="time-chip">10 MIN</span></p>
+        <h2>Cambiá la ecuación.<br>Mirá qué pasa.</h2>
+        <p>La recta <b>a</b> queda fija. Modificá la pendiente y la ordenada al origen de la recta <b>b</b> y observá cómo cambia su relación con <b>a</b>.</p>
+      </div>
+      <div class="lab-grid">
+        <div class="lab-stage">
+          <svg id="labSvg" class="lab-svg" viewBox="0 0 600 300" role="img" aria-label="Plano cartesiano con la recta a, fija, y la recta b, que se modifica con la pendiente y la ordenada al origen">
+            <g id="labGrid"></g>
+            <line id="labA" class="line-a" x1="0" y1="0" x2="0" y2="0"/>
+            <line id="labB" class="line-b" x1="0" y1="0" x2="0" y2="0"/>
+            <path id="labRight" class="lab-right" d=""/>
+            <circle id="labPoint" class="lab-point" r="6" cx="0" cy="0" style="display:none"/>
+            <text id="labPointText" class="lab-point-text" x="0" y="0"></text>
+            <text id="labNameA" class="lab-name" x="0" y="0">a</text>
+            <text id="labNameB" class="lab-name" x="0" y="0">b</text>
+          </svg>
+        </div>
+        <div class="lab-panel">
+          <ul class="eq-legend" aria-label="Ecuaciones de las rectas">
+            <li class="eq-a"><b>a</b> <span>y = 2x − 1</span><small>m₁ = 2 · b₁ = −1</small></li>
+            <li class="eq-b"><b>b</b> <span id="eqB">y = 2x + 2</span><small id="eqBvals">m₂ = 2 · b₂ = 2</small></li>
+          </ul>
+          <div class="lab-readout" data-state="parallel" id="labState" aria-live="polite">
+            <h3 id="labTitle">Paralelas</h3>
+            <p id="labText">Misma pendiente y distinta ordenada al origen: avanzan igual y nunca se cortan.</p>
+            <p class="lab-cond" id="labCond">m₁ = m₂ (2 = 2)</p>
+            <p class="lab-angle">Ángulo entre las rectas: <b id="labAngle">0°</b></p>
+          </div>
+          <div class="slider-row">
+            <label class="slider-label" for="labM"><span>Pendiente de b (m₂)</span><output id="labMVal" for="labM">2</output></label>
+            <input id="labM" class="slider" type="range" min="-4" max="4" step="0.5" value="2">
+          </div>
+          <div class="slider-row">
+            <label class="slider-label" for="labBInt"><span>Ordenada al origen de b (b₂)</span><output id="labBVal" for="labBInt">2</output></label>
+            <input id="labBInt" class="slider" type="range" min="-4" max="4" step="1" value="2">
+          </div>
+          <div class="presets" role="group" aria-label="Casos para probar">
+            <button type="button" data-m="2" data-b="2">Paralela</button>
+            <button type="button" data-m="1" data-b="0">Secante</button>
+            <button type="button" data-m="-0.5" data-b="3">Perpendicular</button>
+            <button type="button" data-m="2" data-b="-1">Misma recta</button>
+          </div>
+          <p class="lab-note" id="labNote"></p>
+        </div>
+      </div>
+      <div class="prompt-box">
+        <span class="prompt-label">PREDECÍ ANTES DE MOVER</span>
+        <p>¿Qué valor de m hace que b sea paralela a a? ¿Y perpendicular? Si dejás m fijo y movés solo b, ¿qué le pasa a la recta? ¿Y si dejás b fijo y cambiás m?</p>
+      </div>
+      <div class="slide-number">04 <span>/ 05</span></div>
+    </section>
+
+    <!-- 5 · ACTIVIDADES · 15 min -->
+    <section id="actividades" class="section activities slide" data-slide="Actividades">
+      <div class="section-heading">
+        <p class="eyebrow">04 · ¡PONÉ A PRUEBA TU MIRADA! <span class="time-chip">15 MIN</span></p>
+        <h2>Detectives de rectas.</h2>
+        <p>Leé cada situación y elegí la respuesta correcta. Podés volver a intentarlo.</p>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-top"><span id="questionCount">PREGUNTA 1 DE 8</span><span class="score" id="score">Aciertos: 0</span></div>
+        <div class="progress" role="progressbar" aria-label="Progreso de la actividad" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progressBar"></span></div>
+        <div class="quiz-illustration" id="quizIllustration" aria-hidden="true"></div>
+        <h3 id="questionText"></h3>
+        <div class="answers" id="answers"></div>
+        <p class="feedback" id="feedback" aria-live="polite">Elegí una respuesta para comprobar tu idea.</p>
+        <div class="quiz-actions"><button id="nextBtn" class="primary-btn" type="button" disabled>Siguiente <span aria-hidden="true">→</span></button><button id="restartBtn" class="text-btn" type="button">Reiniciar actividad</button></div>
+      </div>
+    
+    </section>
+
+    <!-- 6 · CIERRE · 10 min -->
+    <section id="cierre" class="closing slide" data-slide="Cierre">
+      <div class="closing-mark" aria-hidden="true">∠</div>
+      <p class="eyebrow">05 · PARA CERRAR <span class="time-chip">10 MIN</span></p>
+      <h2>Una última idea<br><span>para recordar.</span></h2>
+      <div class="recap">
+        <p><b>∥ Paralelas</b><span>No se cortan · m₁ = m₂</span></p>
+        <p><b>× Secantes</b><span>Se cortan en un punto · m₁ ≠ m₂</span></p>
+        <p><b>⊥ Perpendiculares</b><span>Se cortan a 90° · m₁ · m₂ = −1</span></p>
+      </div>
+      <p class="closing-question">¿Podés explicar la diferencia con tus propias palabras?</p>
+      <button class="primary-btn" id="backToTop" type="button">Volver al inicio <span aria-hidden="true">↑</span></button>
+      <div class="slide-number">05 <span>/ 05</span></div>
+    </section>
+  </main>
+  <footer><span>MATEMÁTICA · GEOMETRÍA</span><span>Aprender es observar de otra manera.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
